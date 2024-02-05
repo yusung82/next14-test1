@@ -1,11 +1,13 @@
-import { Metadata } from "next";
+export const metadata = {
+  title: "About us",
+};
 
-export const metadata: Metadata = {
-  title: 'about us',
+export default function AboutUs() {
+  return (
+    <div>
+      <h1>About us!</h1>
+    </div>
+  );
 }
 
-export default function Aboutus(){
-  return <div>
-    <h1> about - us</h1>
-  </div> ;
-}
+export const runtime = "edge";

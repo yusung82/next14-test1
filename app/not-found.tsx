@@ -1,9 +1,13 @@
-import { Metadata } from "next"
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: '404 not found',
-}
+  title: "Not found",
+};
 
-export default function NotFound(){
-  return <h1>not found</h1>
+export default function NotFound() {
+  return (
+    <div>
+      <h1>Not found!</h1>
+    </div>
+  );
 }
